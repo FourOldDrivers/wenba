@@ -1,7 +1,7 @@
 package com.old.drivers.bean;
 
 /**
- * ´ğ°¸ÆÀÂÛ
+ * è¯„è®º
  * 
  * @author Xyu
  *

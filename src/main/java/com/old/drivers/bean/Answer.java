@@ -1,7 +1,12 @@
 package com.old.drivers.bean;
 
-/*
- * ´ð°¸
+import java.sql.Date;
+
+/**
+ * ç­”æ¡ˆ
+ * 
+ * @author Xyu
+ *
  */
 public class Answer {
 

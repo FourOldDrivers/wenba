@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 /**
- * ÓÃ»§Àà
+ * ï¿½Ã»ï¿½ï¿½ï¿½
  * 
  * @author Xyu
  *
@@ -13,85 +13,99 @@ import java.util.ArrayList;
 public class User {
 
 	/**
-	 * ±àºÅ
+	 * ç”¨æˆ·id
 	 */
 	private Long id;
 
 	/**
-	 * ÓÃ»§Ãû
+	 * ç”¨æˆ·å
 	 */
 	private String name;
 
 	/**
-	 * ÃÜÂë
+	 * å¯†ç 
 	 */
 	private String password;
 
 	/**
-	 * 
+	 * æ³¨å†Œæ—¶é—´
 	 */
 	private Date date;
 
 	/**
-	 * êÇ³Æ
+	 * æ˜µç§°
 	 */
 	private String nick;
 
 	/**
-	 * ÓÊÏä
+	 * é‚®ç®±
 	 */
 	private String email;
 
 	/**
-	 * µç»°
+	 * çŠ¶æ€ 0ï¼šæ‰“å¼€ï¼Œ1ï¼šå…³é—­
+	 */
+	private int state;
+
+	/**
+	 * ï¿½ç»°
 	 */
 	private String phone;
 
 	/**
-	 * ĞÔ±ğ
+	 * æ€§åˆ«ï¼ˆé»˜è®¤ç”·ï¼‰
 	 */
 	private int sex;
 
 	/**
-	 * Ö°Òµ
+	 *èŒä¸š
 	 */
 	private String industry;
 
 	/**
-	 * Î¢ĞÅºÅ
+	 * å±é™©
 	 */
 	private String weChat;
 
 	/**
-	 * QQºÅ
+	 * QQå·
 	 */
 	private String qq;
 
 	/**
-	 * Í·Ïñ
+	 * å¤´åƒ
 	 */
 	private String headImg;
 
 	/**
-	 * ÓÃ»§µÄÎÊÌâ
+	 * ç”¨æˆ·é—®é¢˜åˆ—è¡¨
 	 */
 	private ArrayList<Question> questions = new ArrayList<Question>();
 
 	/**
-	 * ÓÃ»§µÄ»Ø´ğ
+	 * ç”¨æˆ·å›ç­”åˆ—è¡¨
 	 */
 	private ArrayList<Answer> answers = new ArrayList<Answer>();
 
 	/**
-	 * ÓÃ»§µÄÆÀÂÛ
+	 * ç”¨æˆ·è¯„è®ºåˆ—è¡¨
 	 */
 	private ArrayList<Comment> comments = new ArrayList<Comment>();
 
 	/**
-	 * ÓÃ»§µÄ·ÛË¿
+	 * ç”¨æˆ·ç²‰ä¸åˆ—è¡¨
 	 */
 	private ArrayList<User> fans = new ArrayList<User>();
 
+	public User() {
+	}
+
+	/**
+	 * @param name
+	 * @param password
+	 * @param nick
+	 * @param email
+	 */
 	public User(String name, String password, String nick, String email) {
 		super();
 		this.name = name;
@@ -173,6 +187,21 @@ public class User {
 	 */
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	/**
+	 * @return the state
+	 */
+	public int getState() {
+		return state;
+	}
+
+	/**
+	 * @param state
+	 *            the state to set
+	 */
+	public void setState(int state) {
+		this.state = state;
 	}
 
 	/**
@@ -281,7 +310,7 @@ public class User {
 	}
 
 	/**
-	 * Ìí¼ÓÎÊÌâ
+	 * å¢åŠ ä¸€ä¸ªé—®é¢˜
 	 * 
 	 * @param question
 	 */
@@ -305,7 +334,7 @@ public class User {
 	}
 
 	/**
-	 * Ìí¼Ó»Ø´ğ
+	 * ï¿½ï¿½Ó»Ø´ï¿½
 	 * 
 	 * @param answer
 	 */
@@ -329,7 +358,7 @@ public class User {
 	}
 
 	/**
-	 * Ìí¼ÓÆÀÂÛ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param comment
 	 */
