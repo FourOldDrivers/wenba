@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 /**
- * ����
+ * 问题类
  * 
  * @author Xyu
  *
